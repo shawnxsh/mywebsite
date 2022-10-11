@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/shawnxsh.github.io/mywebsite/static/css/main.4e641885.css",
-    "main.js": "/shawnxsh.github.io/mywebsite/static/js/main.fca8efd7.js",
-    "static/js/787.21d17fcb.chunk.js": "/shawnxsh.github.io/mywebsite/static/js/787.21d17fcb.chunk.js",
-    "static/media/Logo.gif": "/shawnxsh.github.io/mywebsite/static/media/Logo.b1f647531c3f9d3117a6.gif",
-    "static/media/logo_XMU.png": "/shawnxsh.github.io/mywebsite/static/media/logo_XMU.333318313a9670e6dbae.png",
-    "static/media/slide5.jpg": "/shawnxsh.github.io/mywebsite/static/media/slide5.60ccfbc8d2ab75e16734.jpg",
-    "static/media/slide3.jpg": "/shawnxsh.github.io/mywebsite/static/media/slide3.1f5be0e19424445fc578.jpg",
-    "static/media/slide1.jpg": "/shawnxsh.github.io/mywebsite/static/media/slide1.4d126496547e3c3b84ea.jpg",
-    "static/media/slide2.jpg": "/shawnxsh.github.io/mywebsite/static/media/slide2.e3ad6b10bbd72ea71d7e.jpg",
-    "static/media/slide4.jpg": "/shawnxsh.github.io/mywebsite/static/media/slide4.e1135d96f0977c1b0a35.jpg",
-    "static/media/Logo.png": "/shawnxsh.github.io/mywebsite/static/media/Logo.050f37ed4b7f094a1b09.png",
-    "static/media/logo_TK.png": "/shawnxsh.github.io/mywebsite/static/media/logo_TK.f8e72b9ce86a83e5bf19.png",
-    "static/media/logo_UNSW.png": "/shawnxsh.github.io/mywebsite/static/media/logo_UNSW.3b1d99eb669fe2d8bded.png",
-    "index.html": "/shawnxsh.github.io/mywebsite/index.html",
-    "main.4e641885.css.map": "/shawnxsh.github.io/mywebsite/static/css/main.4e641885.css.map",
-    "main.fca8efd7.js.map": "/shawnxsh.github.io/mywebsite/static/js/main.fca8efd7.js.map",
-    "787.21d17fcb.chunk.js.map": "/shawnxsh.github.io/mywebsite/static/js/787.21d17fcb.chunk.js.map"
+    "main.css": "/mywebsite/static/css/main.4e641885.css",
+    "main.js": "/mywebsite/static/js/main.de1aa303.js",
+    "static/js/787.21d17fcb.chunk.js": "/mywebsite/static/js/787.21d17fcb.chunk.js",
+    "static/media/Logo.gif": "/mywebsite/static/media/Logo.b1f647531c3f9d3117a6.gif",
+    "static/media/logo_XMU.png": "/mywebsite/static/media/logo_XMU.333318313a9670e6dbae.png",
+    "static/media/slide5.jpg": "/mywebsite/static/media/slide5.60ccfbc8d2ab75e16734.jpg",
+    "static/media/slide3.jpg": "/mywebsite/static/media/slide3.1f5be0e19424445fc578.jpg",
+    "static/media/slide1.jpg": "/mywebsite/static/media/slide1.4d126496547e3c3b84ea.jpg",
+    "static/media/slide2.jpg": "/mywebsite/static/media/slide2.e3ad6b10bbd72ea71d7e.jpg",
+    "static/media/slide4.jpg": "/mywebsite/static/media/slide4.e1135d96f0977c1b0a35.jpg",
+    "static/media/Logo.png": "/mywebsite/static/media/Logo.050f37ed4b7f094a1b09.png",
+    "static/media/logo_TK.png": "/mywebsite/static/media/logo_TK.f8e72b9ce86a83e5bf19.png",
+    "static/media/logo_UNSW.png": "/mywebsite/static/media/logo_UNSW.3b1d99eb669fe2d8bded.png",
+    "index.html": "/mywebsite/index.html",
+    "main.4e641885.css.map": "/mywebsite/static/css/main.4e641885.css.map",
+    "main.de1aa303.js.map": "/mywebsite/static/js/main.de1aa303.js.map",
+    "787.21d17fcb.chunk.js.map": "/mywebsite/static/js/787.21d17fcb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e641885.css",
-    "static/js/main.fca8efd7.js"
+    "static/js/main.de1aa303.js"
   ]
 }
