@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.958749f6.css",
-    "main.js": "/mywebsite/static/js/main.adc30786.js",
+    "main.css": "/mywebsite/static/css/main.cd93aff4.css",
+    "main.js": "/mywebsite/static/js/main.2e3ec19a.js",
     "static/js/787.21d17fcb.chunk.js": "/mywebsite/static/js/787.21d17fcb.chunk.js",
     "static/media/Logo.gif": "/mywebsite/static/media/Logo.b1f647531c3f9d3117a6.gif",
     "static/media/logo_XMU.png": "/mywebsite/static/media/logo_XMU.333318313a9670e6dbae.png",
+    "static/media/slackr.png": "/mywebsite/static/media/slackr.ef08404c237f5d4a94e9.png",
     "static/media/slide5.jpg": "/mywebsite/static/media/slide5.60ccfbc8d2ab75e16734.jpg",
     "static/media/slide3.jpg": "/mywebsite/static/media/slide3.1f5be0e19424445fc578.jpg",
     "static/media/slide1.jpg": "/mywebsite/static/media/slide1.4d126496547e3c3b84ea.jpg",
     "static/media/slide2.jpg": "/mywebsite/static/media/slide2.e3ad6b10bbd72ea71d7e.jpg",
     "static/media/slide4.jpg": "/mywebsite/static/media/slide4.e1135d96f0977c1b0a35.jpg",
     "static/media/Logo.png": "/mywebsite/static/media/Logo.050f37ed4b7f094a1b09.png",
+    "static/media/resonate.png": "/mywebsite/static/media/resonate.2f487d3a23e2b321697e.png",
+    "static/media/envited.png": "/mywebsite/static/media/envited.1dd2250e4e4e0ae509bb.png",
     "static/media/logo_TK.png": "/mywebsite/static/media/logo_TK.f8e72b9ce86a83e5bf19.png",
+    "static/media/emailtrigger.png": "/mywebsite/static/media/emailtrigger.11c3f04687e81d846eac.png",
+    "static/media/webscraping.png": "/mywebsite/static/media/webscraping.6d8ee6005c8d8cf52cb0.png",
+    "static/media/responsive.png": "/mywebsite/static/media/responsive.e6484866663c1848221c.png",
     "static/media/logo_UNSW.png": "/mywebsite/static/media/logo_UNSW.3b1d99eb669fe2d8bded.png",
     "index.html": "/mywebsite/index.html",
-    "main.958749f6.css.map": "/mywebsite/static/css/main.958749f6.css.map",
-    "main.adc30786.js.map": "/mywebsite/static/js/main.adc30786.js.map",
+    "main.cd93aff4.css.map": "/mywebsite/static/css/main.cd93aff4.css.map",
+    "main.2e3ec19a.js.map": "/mywebsite/static/js/main.2e3ec19a.js.map",
     "787.21d17fcb.chunk.js.map": "/mywebsite/static/js/787.21d17fcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.958749f6.css",
-    "static/js/main.adc30786.js"
+    "static/css/main.cd93aff4.css",
+    "static/js/main.2e3ec19a.js"
   ]
 }
