@@ -7,18 +7,18 @@ function Footer() {
       <div className="w-16 overflow-hidden">
         <img src={Logo} alt="Logo" className="w-full h-full" />
       </div>
-      <div className="flex space-x-4">
-        <div>
+      <div className="flex space-x-7">
+        <div className="flex items-center space-x-2">
           <BsGithub />
-          GitHub
+          <span>GitHub</span>
         </div>
-        <div>
+        <div className="flex items-center space-x-2">
           <BsLinkedin />
-          LinkedIn
+          <span>LinkedIn</span>
         </div>
-        <div>
+        <div className="flex items-center space-x-2">
           <BsMailbox />
-          Email
+          <span>Email</span>
         </div>
       </div>
       <div className="text-xs align-bottom">

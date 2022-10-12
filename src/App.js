@@ -1,18 +1,17 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-
-export const menuItems = ["Home", "Projects"];
 
 function App() {
   return (
     <div className="App grid">
       <Navbar />
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Projects" element={<Projects />} />
+        <Route path="/mywebsite/home" element={<Home />} />
+        <Route path="/mywebsite/projects" element={<Projects />} />
+        <Route path="*" element={<Navigate to="/mywebsite/home" replace />} />
       </Routes>
       <Footer />
     </div>

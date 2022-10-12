@@ -10,6 +10,11 @@ module.exports = {
       xxl: "1536px",
     },
     extend: {
+      fontFamily: {
+        "press-start": ['"Press Start 2P"', "cursive"],
+        Caveat: ["Caveat", "cursive"],
+        "Permanent-Marker": ["Permanent Marker", "cursive"],
+      },
       colors: {
         themeBlue: "#01458c",
         brightRed: "#01458c",

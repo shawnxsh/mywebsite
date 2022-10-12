@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 function Slider({ slideNum }) {
   const [position, setPosition] = useState(0);
 
-  const slidePositions = [
-    ["15vw", "-75%"],
-    ["85vw", "-60%"],
-    ["155vw", "50%"],
-    ["-125vw", "50%"],
-    ["-55vw", "-60%"],
-  ];
+  // const slidePositions = [
+  //   ["20vw", "-75%"],
+  //   ["80vw", "-60%"],
+  //   ["140vw", "50%"],
+  //   ["-100vw", "50%"],
+  //   ["-40vw", "-60%"],
+  // ];
 
   const changeSlide = (direction) => {
     if (direction === "left" && position + 1 === slideNum) {
@@ -25,43 +25,38 @@ function Slider({ slideNum }) {
     }
   };
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     changePosition();
-  //   }, 5000);
-  // });
-
   return (
-    <div className="outerBox relative w-screen pt-[35%] overflow-hidden ">
+    <div className="relative w-screen pt-[30%] overflow-hidden">
       {Object.values(images).map((img, index) => {
-        const temp1 = slidePositions.slice(-position);
-        const temp2 = slidePositions.slice(0, -position);
-        const newPos = [...temp1, ...temp2];
+        // const temp1 = slidePositions.slice(-position);
+        // const temp2 = slidePositions.slice(0, -position);
+        // const newPos = [...temp1, ...temp2];
         return (
           <motion.div
             key={index}
-            className="innerBox absolute w-[70%] pt-[29%] "
+            className="innerBox absolute w-[50vw] pt-[25%] "
             initial={{
-              left: newPos[index][0],
-              top: newPos[index][1],
+              left: `${(index - position) * 50 + 25}vw`,
+              top: index === position ? "-75%" : "-60%",
               opacity: 0,
               scale: 1,
             }}
             animate={{
-              left: newPos[index][0],
-              top: newPos[index][1],
-              opacity: index === position ? 1 : 0.7,
+              left: `${(index - position) * 50 + 25}vw`,
+              top: index === position ? "-75%" : "-60%",
+              opacity: index === position ? 1 : 0.6,
               scale: index === position ? 1 : 0.8,
             }}
             transition={{
               type: "spring",
               stiffness: 500,
-              damping: 50,
+              damping: 30,
             }}
             onClick={(e) => {
-              if (e.clientX / window.innerWidth < 0.1) {
+              console.log(e.clientX / window.innerWidth);
+              if (e.clientX / window.innerWidth < 0.2) {
                 changeSlide("right");
-              } else if (e.clientX / window.innerWidth > 0.9) {
+              } else if (e.clientX / window.innerWidth > 0.8) {
                 changeSlide("left");
               }
             }}
@@ -69,7 +64,7 @@ function Slider({ slideNum }) {
             <img
               className="absolute w-full h-full object-cover rounded-md"
               src={img}
-              alt=""
+              alt="slide"
             />
 
             {index === position && (

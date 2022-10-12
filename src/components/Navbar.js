@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import anime from "animejs/lib/anime.es.js";
 import { motion } from "framer-motion";
-import { menuItems } from "../App";
 import Logo from "../imgs/logo/Logo.gif";
 
 function Navbar() {
+  const menuItems = [
+    ["Home", "/mywebsite/home"],
+    ["Projects", "/mywebsite/projects"],
+  ];
+
   anime({
     targets: [".staggering-from-demo"],
     translateY: -150,
@@ -24,13 +28,13 @@ function Navbar() {
           <div className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
               <Link
-                key={"menuItems-" + item}
+                key={"menuItems-" + item[0]}
                 className="staggering-from-demo
                 font-semibold text-white
             hover:text-darkGrayishBlue"
-                to={`/${item}`}
+                to={`${item[1]}`}
               >
-                {item}
+                {item[0]}
               </Link>
             ))}
           </div>
