@@ -7,7 +7,7 @@ const variants = {
   animate: {
     opacity: 1,
     border: 3,
-    backgroundColor: "transparent",
+    backgroundColor: "rgb(52, 52, 52, 0)",
   },
 
   exit: {
@@ -26,7 +26,7 @@ function KeywordTag({ keyword }) {
       className="rounded mt-1 p-1 border-2 border-white"
       {...variants}
       whileHover={{
-        backgroundColor: "gray",
+        backgroundColor: "rgb(52, 52, 52, 0.9)",
         cursor: "pointer",
       }}
     >

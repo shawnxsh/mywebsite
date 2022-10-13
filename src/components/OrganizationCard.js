@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 function OrganizationCard({ cardInfo }) {
   const [ifHover, setIfHover] = useState(false);
   return (
-    <div className="grid grid-rows-2 grid-cols-1 justify-items-center md:grid-rows-1 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-1">
+    <div className="grid grid-rows-2 grid-cols-1 justify-items-center gap-2 md:gap-0 md:grid-rows-1 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-1">
       <motion.div
-        className="relative rounded-md overflow-hidden border-4 "
+        className="relative w-[70%] aspect-video  self-center rounded-md overflow-hidden border-4"
         initial={{
           opacity: 0,
           scale: 0.5,
@@ -21,7 +21,7 @@ function OrganizationCard({ cardInfo }) {
         whileHover={{
           scale: 1.1,
           borderColor: "rgb(251, 243, 251, 0.6)",
-          boxShadow: "0px 0px 10px #EBF6FF",
+          boxShadow: "0px 0px 10px 3px #EBF6FF",
         }}
         onMouseEnter={() => {
           setIfHover(true);
@@ -37,7 +37,7 @@ function OrganizationCard({ cardInfo }) {
           }}
           animate={{
             opacity: ifHover ? 0 : 1,
-            scale: 1,
+            scale: ifHover ? 0 : 1,
             backgroundColor: cardInfo.bg,
           }}
           className="absolute w-full h-full object-contain"
@@ -64,12 +64,14 @@ function OrganizationCard({ cardInfo }) {
               : `https://www.youtube.com/embed/${cardInfo.videoID}`
           }
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           title="Embedded youtube"
         />
       </motion.div>
-      <div className="grid grid-rows-3 items-center text-center md:justify-self-start md:text-start lg:justify-self-center lg:text-center">
+      <div
+        className="text-xl 
+      items-center text-center  md:text-base md:grid md:grid-rows-3  md:justify-self-start md:text-start lg:justify-self-center lg:text-center"
+      >
         <div>{cardInfo.organizationName}</div>
         <div>{cardInfo.title}</div>
         <div>{cardInfo.period}</div>

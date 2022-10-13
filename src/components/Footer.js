@@ -1,5 +1,6 @@
 import Logo from "../imgs/logo/Logo.png";
 import { BsGithub, BsLinkedin, BsMailbox } from "react-icons/bs";
+import { myEmail } from "./Images";
 
 function Footer() {
   return (
@@ -8,18 +9,24 @@ function Footer() {
         <img src={Logo} alt="Logo" className="w-full h-full" />
       </div>
       <div className="flex space-x-7">
-        <div className="flex items-center space-x-2">
+        <a
+          href="http://github.com/shawnxsh"
+          className="flex items-center space-x-2"
+        >
           <BsGithub />
           <span>GitHub</span>
-        </div>
-        <div className="flex items-center space-x-2">
+        </a>
+        <a
+          href="http://www.linkedin.com/in/xingshihe/"
+          className="flex items-center space-x-2"
+        >
           <BsLinkedin />
           <span>LinkedIn</span>
-        </div>
-        <div className="flex items-center space-x-2">
+        </a>
+        <a href={`mailto:${myEmail}`} className="flex items-center space-x-2">
           <BsMailbox />
           <span>Email</span>
-        </div>
+        </a>
       </div>
       <div className="text-xs align-bottom">
         Made by <b>Shawn He</b> &copy; 2022, All Right Reserved

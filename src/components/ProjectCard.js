@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import slide5 from "../imgs/slides/slide5.jpg";
 import KeywordTag from "./KeywordTag";
 
 function ProjectCard({ data }) {
@@ -13,32 +12,35 @@ function ProjectCard({ data }) {
       animate={{
         opacity: 1,
         scale: 1,
-        borderRadius: "10px",
+        borderRadius: "5px",
       }}
       transition={{
         duration: 0.5,
       }}
     >
-      <motion.img
-        initial={{
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          borderRadius: "10px",
-        }}
-        whileHover={{
-          // scale: 1.1,
-          borderColor: "rgb(251, 243, 251, 0.6)",
-          boxShadow: "0px 0px 10px #EBF6FF",
-        }}
-        className="w-full h-full object-fill flex-1"
-        src={slide5}
-        alt="organizationLogo"
-      />
-      <div className="p-1 flex-1">
+      <a href={data.url} className="w-full">
+        <motion.img
+          initial={{
+            opacity: 0,
+            scale: 0.5,
+          }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            borderRadius: "5px",
+          }}
+          whileHover={{
+            borderColor: "rgb(251, 243, 251, 0.6)",
+            boxShadow: "0px 0px 10px #EBF6FF",
+            cursor: "pointer",
+          }}
+          className="w-full object-cover aspect-video"
+          src={data.img}
+          alt="organizationLogo"
+        />
+      </a>
+
+      <div className="p-1 flex-none">
         <div className="text-[1.1em] font-bold">{data.name}</div>
         <div className="text-[0.9em] text-gray-300">{data.description}</div>
         <div className="text-[0.7em] flex flex-wrap space-x-2">
