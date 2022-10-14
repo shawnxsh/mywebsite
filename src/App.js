@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App grid relative">
+    <div className="App grid text-white">
       <Navbar />
       <Routes>
         <Route path="/mywebsite/home" element={<Home />} />

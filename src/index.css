@@ -10,20 +10,3 @@
 body {
   overflow-x: hidden;
 }
-
-.mama {
-  margin: 10em auto;
-  position: relative;
-  width: 200px;
-  height: 400px;
-}
-
-.lala {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-origin: center;
-  /* transform: rotateY(calc(var(--i))); */
-}

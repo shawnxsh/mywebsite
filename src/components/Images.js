@@ -19,13 +19,7 @@ import smallyoutubeImg from "../imgs/projects/smallyoutube.png";
 
 export const myEmail = "shawnhe94@gmail.com";
 
-export const images = {
-  slide1,
-  slide2,
-  slide3,
-  slide4,
-  slide5,
-};
+export const images = [slide1, slide2, slide3, slide4, slide5];
 
 export const organizationInfo = {
   TeamKids: {
