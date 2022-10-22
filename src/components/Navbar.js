@@ -6,21 +6,22 @@ import { myEmail } from "./Images";
 
 function Navbar() {
   const animation = useRef(null);
+  const [navBarFixed, setNavBarFixed] = useState(false);
 
   const menuItems = [
     ["Home", "/mywebsite/home"],
     ["Projects", "/mywebsite/projects"],
   ];
 
-  // const handleNavBar = () => {
-  //   if (window.scrollY >= 80) {
-  //     setNavBar(true);
-  //   } else {
-  //     setNavBar(false);
-  //   }
-  // };
+  const handleNavBarFixed = () => {
+    if (window.scrollY >= 72) {
+      setNavBarFixed(true);
+    } else {
+      setNavBarFixed(false);
+    }
+  };
 
-  // window.addEventListener("scroll", handleNavBar);
+  window.addEventListener("scroll", handleNavBarFixed);
 
   useEffect(() => {
     animation.current = anime.timeline({
@@ -39,7 +40,13 @@ function Navbar() {
 
   return (
     <div className="w-screen h-[4.5em] bg-black">
-      <nav className="fixed w-full h-[4.5em] flex items-center justify-between  py-2 px-6 bg-black z-10">
+      <nav
+        className={
+          navBarFixed
+            ? "fixed w-full h-[4.5em] flex items-center justify-between  py-2 px-6 bg-black z-10"
+            : "w-full h-[4.5em] flex items-center justify-between  py-2 px-6 bg-black z-10"
+        }
+      >
         <div className="w-16 overflow-hidden">
           <img src={Logo} alt="Logo" />
         </div>

@@ -83,7 +83,7 @@ function Carousel() {
   return (
     <motion.div
       ref={containerRef}
-      className="justify-self-center w-screen aspect-[2/1] flex justify-center items-center overflow-hidden mt-6 md:aspect-[4/1]"
+      className="relative justify-self-center w-screen aspect-[2/1] flex justify-center overflow-x-hidden items-center mt-6 md:aspect-[4/1]"
     >
       {range.map((item, inx) => {
         return <ImgContainer key={inx} index={item + index} />;

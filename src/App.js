@@ -6,15 +6,17 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App grid text-white">
-      <Navbar />
-      <Routes>
-        <Route path="/mywebsite/home" element={<Home />} />
-        <Route path="/mywebsite/projects" element={<Projects />} />
-        <Route path="*" element={<Navigate to="/mywebsite/home" replace />} />
-      </Routes>
-      <Footer />
-    </div>
+    <body>
+      <div className="App grid text-white">
+        <Navbar />
+        <Routes>
+          <Route path="/mywebsite/home" element={<Home />} />
+          <Route path="/mywebsite/projects" element={<Projects />} />
+          <Route path="*" element={<Navigate to="/mywebsite/home" replace />} />
+        </Routes>
+        <Footer />
+      </div>
+    </body>
   );
 }
 

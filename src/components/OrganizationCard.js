@@ -29,6 +29,9 @@ function OrganizationCard({ cardInfo }) {
         onMouseLeave={() => {
           setIfHover(false);
         }}
+        whileTap={() => {
+          setIfHover(true);
+        }}
       >
         <motion.img
           initial={{
