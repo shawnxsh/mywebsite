@@ -18,7 +18,7 @@ function ProjectCard({ data }) {
         duration: 0.5,
       }}
     >
-      <a href={data.url} className="w-full">
+      <a href={data.url} className="w-full aspect-[1.55/1]">
         <motion.img
           initial={{
             opacity: 0,
@@ -34,9 +34,9 @@ function ProjectCard({ data }) {
             boxShadow: "0px 0px 10px #EBF6FF",
             cursor: "pointer",
           }}
-          className="w-full object-cover aspect-video"
+          className="w-full h-full object-contain"
           src={data.img}
-          alt="organizationLogo"
+          alt="projectsPreview"
         />
       </a>
 

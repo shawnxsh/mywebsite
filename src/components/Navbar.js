@@ -9,7 +9,7 @@ function Navbar() {
   const [navBarFixed, setNavBarFixed] = useState(false);
 
   const menuItems = [
-    ["Home", "/mywebsite/home"],
+    ["Home", "/mywebsite"],
     ["Projects", "/mywebsite/projects"],
   ];
 
