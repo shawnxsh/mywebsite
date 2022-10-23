@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.30cd3f60.css",
-    "main.js": "/mywebsite/static/js/main.b3cb57f4.js",
+    "main.css": "/mywebsite/static/css/main.2a46e632.css",
+    "main.js": "/mywebsite/static/js/main.182e8b1e.js",
     "static/js/787.21d17fcb.chunk.js": "/mywebsite/static/js/787.21d17fcb.chunk.js",
     "static/media/Logo.gif": "/mywebsite/static/media/Logo.b1f647531c3f9d3117a6.gif",
     "static/media/logo_XMU.png": "/mywebsite/static/media/logo_XMU.333318313a9670e6dbae.png",
@@ -21,12 +21,12 @@
     "static/media/responsive.png": "/mywebsite/static/media/responsive.e6484866663c1848221c.png",
     "static/media/logo_UNSW.png": "/mywebsite/static/media/logo_UNSW.3b1d99eb669fe2d8bded.png",
     "index.html": "/mywebsite/index.html",
-    "main.30cd3f60.css.map": "/mywebsite/static/css/main.30cd3f60.css.map",
-    "main.b3cb57f4.js.map": "/mywebsite/static/js/main.b3cb57f4.js.map",
+    "main.2a46e632.css.map": "/mywebsite/static/css/main.2a46e632.css.map",
+    "main.182e8b1e.js.map": "/mywebsite/static/js/main.182e8b1e.js.map",
     "787.21d17fcb.chunk.js.map": "/mywebsite/static/js/787.21d17fcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30cd3f60.css",
-    "static/js/main.b3cb57f4.js"
+    "static/css/main.2a46e632.css",
+    "static/js/main.182e8b1e.js"
   ]
 }
